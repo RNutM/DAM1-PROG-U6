@@ -1,4 +1,4 @@
-package EjerciciosArrays_03_cine;
+package EjerciciosArrays_03_Cine;
 
 import java.util.Scanner;
 

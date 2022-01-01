@@ -1,4 +1,4 @@
-package EjerciciosArrays00;
+package EjerciciosArrays_00_Coche;
 
 public class Coche {
 	/**

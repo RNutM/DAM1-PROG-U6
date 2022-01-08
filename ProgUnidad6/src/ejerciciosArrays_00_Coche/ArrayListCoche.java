@@ -1,4 +1,4 @@
-package EjerciciosArrays_00_Coche;
+package ejerciciosArrays_00_Coche;
 
 import java.util.ArrayList;
 

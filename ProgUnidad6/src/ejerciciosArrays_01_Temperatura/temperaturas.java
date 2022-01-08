@@ -1,4 +1,4 @@
-package EjerciciosArrays_01_Temperatura;
+package ejerciciosArrays_01_Temperatura;
 
 import java.util.Scanner;
 

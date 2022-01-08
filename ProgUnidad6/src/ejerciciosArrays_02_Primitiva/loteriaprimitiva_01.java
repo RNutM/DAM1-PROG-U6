@@ -1,4 +1,4 @@
-package EjerciciosArrays_02_Primitiva;
+package ejerciciosArrays_02_Primitiva;
 
 public class loteriaprimitiva_01 {
 	/**

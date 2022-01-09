@@ -2,9 +2,9 @@ package ejerciciosArrays_03_Cine;
 
 import java.util.Scanner;
 
-public class Peliculas {
+public class Pelicula {
 	/**
-	 * Practicando con Arrays Películas
+	 * Practicando con ArrayList Películas
 	 * 
 	 * @author Robert G
 	 */
@@ -13,7 +13,7 @@ public class Peliculas {
 	private String genero;
 	private String nombre;
 
-	public Peliculas(int año, String director, String genero, String nombre) {
+	public Pelicula(int año, String director, String genero, String nombre) {
 		super();
 		this.año = año;
 		this.director = director;
@@ -21,7 +21,7 @@ public class Peliculas {
 		this.nombre = nombre;
 	}
 
-	public Peliculas() {
+	public Pelicula() {
 		super();
 		this.año = 0;
 		this.director = "";
@@ -72,7 +72,7 @@ public class Peliculas {
 	}
 
 	@SuppressWarnings("resource")
-	public static Peliculas altaPelicula() {
+	public static Pelicula altaPelicula() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Introduce el nombre de la pelicula");
 		String n = sc.nextLine().toUpperCase();
@@ -95,7 +95,7 @@ public class Peliculas {
 			}
 		}
 		// System.out.println("película "+n+" género "+g+" año "+año+" director"+d);
-		Peliculas p = new Peliculas(año, d, g, n); // Creamos el objeto p
+		Pelicula p = new Pelicula(año, d, g, n); // Creamos el objeto p
 
 		return p;
 	}

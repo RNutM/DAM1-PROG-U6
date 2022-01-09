@@ -1,8 +1,9 @@
 package ejerciciosArrays_02_Primitiva;
 
-public class loteriaprimitiva_01 {
+public class loteriaprimitiva_03 {
 	/**
-	 * Practicando con Arrays Primitiva una combinación
+	 * Practicando con Arrays Primitiva 8 apuestas de 6 números cada una.
+	 * Con array ordenado
 	 * 
 	 * @author Robert G
 	 */
@@ -41,17 +42,26 @@ public class loteriaprimitiva_01 {
 		}
 	}
 
-	public static void imprimirArray(int lista[]) {
-		System.out.println("\t ¡¡¡¡Esta es la combinación ganadora!!!!\n");
+	public static void imprimirArray(int lista[]) {	
 		for (int i = 0; i < arrayboleto.length; i++) {
 			System.out.print("\t" + arrayboleto[i]);
 		}
 	}
-
-	public static void main(String[] args) {
+	
+	public static void ejecutar() {
 		numeroAleatorio();
 		rellenarArray(arrayboleto);
 		burbuja(arrayboleto);
 		imprimirArray(arrayboleto);
+	}
+	
+	public static void main(String[] args) {
+		System.out.println("////Array con elementos ordenados\\\\\n");
+		System.out.println("\t**Boleto con 8 apuestas de 6 números cada una**");
+		
+		for (int i = 0; i < 8; i++) {
+			System.out.println("\n");
+			ejecutar();
+		}
 	}
 }

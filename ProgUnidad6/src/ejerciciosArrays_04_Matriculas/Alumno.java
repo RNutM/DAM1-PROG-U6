@@ -1,8 +1,8 @@
-package ejerciciosArrays4_Matriculas;
+package ejerciciosArrays_04_Matriculas;
 
 public class Alumno {
 	/**
-	 * Practicando con Arrays Matrículas
+	 * Practicando con LinkedList Matrículas
 	 * 
 	 * @author Robert G
 	 */

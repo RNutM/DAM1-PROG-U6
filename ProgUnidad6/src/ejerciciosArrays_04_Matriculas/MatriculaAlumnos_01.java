@@ -1,11 +1,11 @@
-package ejerciciosArrays4_Matriculas;
+package ejerciciosArrays_04_Matriculas;
 
 import java.util.LinkedList;
 import java.util.Scanner;
 
 public class MatriculaAlumnos_01 {
 	/**
-	 * Practicando con Arrays Matrículas
+	 * Practicando con LinkedList Matrículas
 	 * 
 	 * @author Robert G
 	 */

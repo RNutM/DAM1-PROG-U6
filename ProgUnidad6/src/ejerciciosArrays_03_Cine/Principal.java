@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Principal {
 	/**
-	 * Practicando con Arrays Películas
+	 * Practicando con ArrayList Películas
 	 * 
 	 * @author Robert G
 	 */
@@ -14,7 +14,7 @@ public class Principal {
 	public static void main(String[] args) {
 
 		// Este ArrayList va a almacenar todas las peliculas
-		ArrayList<Peliculas> listaPel = new ArrayList<Peliculas>();
+		ArrayList<Pelicula> listaPel = new ArrayList<Pelicula>();
 
 		String eleccion = "";
 		boolean salir = true;
@@ -24,7 +24,7 @@ public class Principal {
 			System.out.println("2. Borrar película");
 			System.out.println("3. Mostrar películas");
 			System.out.println("4. Buscar por género");
-			System.out.println("5. Buscar por inicial");
+			System.out.println("5. Buscar por letra inicial");
 			System.out.println("6. Salir");
 			System.out.println("Elige una opcion: ");
 
@@ -33,8 +33,8 @@ public class Principal {
 			switch (eleccion) {
 
 			case "1":// Añadir película
-				Peliculas mipeli = new Peliculas();
-				mipeli = Peliculas.altaPelicula();
+				Pelicula mipeli = new Pelicula();
+				mipeli = Pelicula.altaPelicula();
 				System.out.println(mipeli.mostrarPelicula());
 				listaPel.add(mipeli);
 				break;
@@ -42,13 +42,13 @@ public class Principal {
 				borrar(listaPel);
 				break;
 			case "3":// Mostrar películas
-				for (Peliculas p : listaPel)
+				for (Pelicula p : listaPel)
 					System.out.println(p.mostrarPelicula());
 				break;
 			case "4":// Buscar por genero
 				buscarG(listaPel);
 				break;
-			case "5":// Buscar por inicial
+			case "5":// Buscar por letra inicial
 				buscarL(listaPel);
 				break;
 			case "6":// Opción para salir
@@ -64,14 +64,14 @@ public class Principal {
 	}
 
 	@SuppressWarnings("resource")
-	public static void borrar(ArrayList<Peliculas> lista) {
+	public static void borrar(ArrayList<Pelicula> lista) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Que película quieres borrar");
 		String n = sc.nextLine().toUpperCase();
 		int borradas = 0;
 		// Para cada película del ArrayList
 		for (int a = 0; a < lista.size(); a++) {
-			Peliculas p = (Peliculas) lista.get(a);
+			Pelicula p = (Pelicula) lista.get(a);
 			if (p.getNombre().equalsIgnoreCase(n)) {
 				lista.remove(a);
 				System.out.println("Película borrada");
@@ -83,7 +83,7 @@ public class Principal {
 	}
 
 	@SuppressWarnings("resource")
-	public static void buscarL(ArrayList<Peliculas> lista) {
+	public static void buscarL(ArrayList<Pelicula> lista) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("La película empieza por ");
 		String l = sc.nextLine().toUpperCase();
@@ -91,7 +91,7 @@ public class Principal {
 		// Para cada película del ArrayList
 
 		for (int a = 0; a < lista.size(); a++) {
-			Peliculas p = (Peliculas) lista.get(a);
+			Pelicula p = (Pelicula) lista.get(a);
 			if (p.getNombre().startsWith(l)) {
 
 				System.out.println(p.mostrarPelicula());
@@ -103,14 +103,14 @@ public class Principal {
 	}
 
 	@SuppressWarnings("resource")
-	public static void buscarG(ArrayList<Peliculas> lista) {
+	public static void buscarG(ArrayList<Pelicula> lista) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("El género es: ");
 		String g = sc.nextLine().toUpperCase();
 
 		// Para cada película del ArrayList
 		for (int a = 0; a < lista.size(); a++) {
-			Peliculas p = (Peliculas) lista.get(a);
+			Pelicula p = (Pelicula) lista.get(a);
 			if (p.getGenero().equals(g)) {
 				System.out.println(p.mostrarPelicula());
 			}

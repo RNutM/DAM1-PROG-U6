@@ -1,0 +1,18 @@
+***********************************************
+La estructura del archivo es correcta
+La web analizada fue https://www.google.es
+***********************************************
+He contado 3 veces esta etiqueta --> (a href).
+
+He contado 1 veces esta etiqueta --> (img).
+
+He contado 0 veces esta etiqueta --> (header).
+
+He contado 0 veces esta etiqueta --> (footer).
+
+He contado 0 veces esta etiqueta --> (article).
+
+He contado 0 veces esta etiqueta --> (section).
+
+He contado 2 veces esta etiqueta --> (div).
+***********************************************

@@ -1,46 +1,23 @@
-package ejerciciosArrays4_matriculas;
+package ejerciciosArrays4_Matriculas;
 
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class MatriculaAlumnos_02 {
+public class MatriculaAlumnos_01 {
 	/**
 	 * Practicando con Arrays Matrículas
 	 * 
 	 * @author Robert G
 	 */
-	static LinkedList<Alumno> AlumnosPreinscritos;
-	static LinkedList<Alumno> AlumnosMatriculados;
-
-	public MatriculaAlumnos_02() {
-		AlumnosPreinscritos = new LinkedList<Alumno>();
-		AlumnosMatriculados = new LinkedList<Alumno>();
-	}
-
-	public LinkedList<Alumno> getAlumnosPreinscritos() {
-		return AlumnosPreinscritos;
-	}
-
-	public void setAlumnosPreinscritos(LinkedList<Alumno> alumnosPreinscritos) {
-		AlumnosPreinscritos = alumnosPreinscritos;
-	}
-
-	public LinkedList<Alumno> getAlumnosMatriculados() {
-		return AlumnosMatriculados;
-	}
-
-	public void setAlumnosMatriculados(LinkedList<Alumno> alumnosMatriculados) {
-		AlumnosMatriculados = alumnosMatriculados;
-	}
-
-	static MatriculaAlumnos_02 m = new MatriculaAlumnos_02();
+	static LinkedList<Alumno> AlumnosPreinscritos = new LinkedList<Alumno>();
+	static LinkedList<Alumno> AlumnosMatriculados = new LinkedList<Alumno>();
 
 	public static void main(String[] args) {
 
 		boolean salir = true;
 		Scanner sc = new Scanner(System.in);
 		String opcion = "";
-		generarListas(m.getAlumnosPreinscritos());
+		generarListas(AlumnosPreinscritos);
 
 		// Muestro en consola los alumnos preinscritos
 		System.out.println("Listado de alumnos preinscritos:\n" + "********************************");
@@ -58,35 +35,35 @@ public class MatriculaAlumnos_02 {
 			switch (opcion) {
 
 			case "1":
-				if (m.getAlumnosPreinscritos().isEmpty()) {
+				if (AlumnosPreinscritos.isEmpty()) {
 					System.out.println("No hay alumnos preinscritos");
 				} else {
-					m.getAlumnosMatriculados().addLast(m.getAlumnosPreinscritos().getFirst());
-					m.getAlumnosPreinscritos().removeFirst();
+					AlumnosMatriculados.addLast(AlumnosPreinscritos.getFirst());
+					AlumnosPreinscritos.removeFirst();
 					System.out.println("////////////////////////////////");
 					System.out.println("Alumno matriculado correctamente");
 					System.out.println("////////////////////////////////");
 				}
 				break;
 			case "2":
-				borrarAlumno(m.getAlumnosMatriculados(), m.getAlumnosPreinscritos());
+				borrarAlumno(AlumnosMatriculados, AlumnosPreinscritos);
 				System.out.println("////////////////////////////");
 				System.out.println("Alumno borrado correctamente");
 				System.out.println("////////////////////////////");
 				break;
 			case "3":
-				if (!m.getAlumnosMatriculados().isEmpty())
+				if (!AlumnosMatriculados.isEmpty())
 					System.out.println("////////////////////////////");
 				System.out.println("Últimos alumnos matriculados");
 				System.out.println("////////////////////////////");
-				System.out.println(m.getAlumnosMatriculados().getLast());
+				System.out.println(AlumnosMatriculados.getLast());
 				break;
 			case "4":
 				System.out.println("/////////////////////////////");
 				System.out.println("Lista de alumnos matriculados");
 				System.out.println("/////////////////////////////");
-				if (!m.getAlumnosMatriculados().isEmpty())
-					for (Alumno a : m.getAlumnosMatriculados())
+				if (!AlumnosMatriculados.isEmpty())
+					for (Alumno a : AlumnosMatriculados)
 						System.out.println(a);
 				break;
 			case "5":

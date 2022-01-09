@@ -1,4 +1,4 @@
-package ejerciciosArrays4_matriculas;
+package ejerciciosArrays4_Matriculas;
 
 public class Alumno {
 	/**

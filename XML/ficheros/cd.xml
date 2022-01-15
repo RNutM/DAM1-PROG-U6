@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<CD_OFERTA>
+	<CD>
+		<album>Iron Maiden</album>
+		<banda>Iron Maiden</banda>
+		<pais>UK</pais>
+		<discografica>EMI</discografica>
+		<precio>11.95</precio>
+		<anyo>1980</anyo>
+	</CD>
+	<CD>
+		<album>Killers</album>
+		<banda>Iron Maiden</banda>
+		<pais>UK</pais>
+		<discografica>EMI</discografica>
+		<precio>11.95</precio>
+		<anyo>1981</anyo>
+	</CD>
+	<CD>
+		<album>The number of the beast</album>
+		<banda>Iron Maiden</banda>
+		<pais>UK</pais>
+		<discografica>EMI</discografica>
+		<precio>11.95</precio>
+		<anyo>1982</anyo>
+	</CD>
+	<CD>
+		<album>Piece of mind</album>
+		<banda>Iron Maiden</banda>
+		<pais>UK</pais>
+		<discografica>EMI</discografica>
+		<precio>11.95</precio>
+		<anyo>1983</anyo>
+	</CD>
+	<CD>
+		<album>Powerslave</album>
+		<banda>Iron Maiden</banda>
+		<pais>UK</pais>
+		<discografica>EMI</discografica>
+		<precio>11.95</precio>
+		<anyo>1984</anyo>
+	</CD>
+	<CD>
+		<album>Live after death</album>
+		<banda>Iron Maiden</banda>
+		<pais>UK</pais>
+		<discografica>EMI</discografica>
+		<precio>11.95</precio>
+		<anyo>1985</anyo>
+	</CD>
+	<CD>
+		<album>Somewhere in time</album>
+		<banda>Iron Maiden</banda>
+		<pais>UK</pais>
+		<discografica>EMI</discografica>
+		<precio>11.95</precio>
+		<anyo>1986</anyo>
+	</CD>
+	<CD>
+		<album>Seventh son of a seventh son</album>
+		<banda>Iron Maiden</banda>
+		<pais>UK</pais>
+		<discografica>EMI</discografica>
+		<precio>11.95</precio>
+		<anyo>1988</anyo>
+	</CD>
+</CD_OFERTA>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dam>
+	<alumno>
+		<nombre>Juan</nombre>
+		<edad>29</edad>
+		<email>juan@gmail.com</email>
+		<genero>masculino</genero>
+	</alumno>
+	<alumno>
+		<nombre>Pedro</nombre>
+		<edad>35</edad>
+		<email>pedro@gmail.com</email>
+		<genero>masculino</genero>
+	</alumno>
+	<alumno>
+		<nombre>Luna</nombre>
+		<edad>19</edad>
+		<email>luna@gmail.com</email>
+		<genero>femenino</genero>
+	</alumno>
+</dam>

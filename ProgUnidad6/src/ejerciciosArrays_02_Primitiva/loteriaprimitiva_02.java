@@ -20,7 +20,7 @@ public class loteriaprimitiva_02 {
 				cont++;
 			}
 		}
-		System.out.println("////Array con elementos desordenados\\\\\n");
+		System.out.println("////Array con elementos desordenados"+"\\\\\\\\"+"\n");
 		System.out.println("\t**Boleto con 8 apuestas de 6 números cada una**\n");
 		for (i = 0; i < 8; i++) {
 			for (j = 0; j < 6; j++) {

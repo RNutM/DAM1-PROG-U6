@@ -56,7 +56,7 @@ public class loteriaprimitiva_03 {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println("////Array con elementos ordenados\\\\\n");
+		System.out.println("////Array con elementos ordenados"+"\\\\\\\\"+"\n");
 		System.out.println("\t**Boleto con 8 apuestas de 6 números cada una**");
 		
 		for (int i = 0; i < 8; i++) {

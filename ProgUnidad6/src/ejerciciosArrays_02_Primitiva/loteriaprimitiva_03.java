@@ -2,7 +2,7 @@ package ejerciciosArrays_02_Primitiva;
 
 public class loteriaprimitiva_03 {
 	/**
-	 * Practicando con Arrays Primitiva 8 apuestas de 6 n�meros cada una.
+	 * Practicando con Arrays Primitiva 8 apuestas de 6 nï¿½meros cada una.
 	 * Con array ordenado
 	 * 
 	 * @author Robert G
@@ -57,7 +57,7 @@ public class loteriaprimitiva_03 {
 	
 	public static void main(String[] args) {
 		System.out.println("////Array con elementos ordenados"+"\\\\\\\\"+"\n");
-		System.out.println("\t**Boleto con 8 apuestas de 6 n�meros cada una**");
+		System.out.println("\t**Boleto con 8 apuestas de 6 nÃºmeros cada una**");
 		
 		for (int i = 0; i < 8; i++) {
 			System.out.println("\n");

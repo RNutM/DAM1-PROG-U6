@@ -2,7 +2,7 @@ package ejerciciosArrays_02_Primitiva;
 
 public class loteriaprimitiva_01 {
 	/**
-	 * Practicando con Arrays Primitiva una combinación
+	 * Practicando con Arrays Primitiva una combinaciÃ¯Â¿Â½n
 	 * 
 	 * @author Robert G
 	 */
@@ -42,7 +42,7 @@ public class loteriaprimitiva_01 {
 	}
 
 	public static void imprimirArray(int lista[]) {
-		System.out.println("\t ¡¡¡¡Esta es la combinación ganadora!!!!\n");
+		System.out.println("\t !!!!Esta es la combinaciÃ¯Â¿Â½n ganadora!!!!\n");
 		for (int i = 0; i < arrayboleto.length; i++) {
 			System.out.print("\t" + arrayboleto[i]);
 		}

@@ -4,18 +4,18 @@ import java.util.Scanner;
 
 public class Pelicula {
 	/**
-	 * Practicando con ArrayList Películas
+	 * Practicando con ArrayList Pelï¿½culas
 	 * 
 	 * @author Robert G
 	 */
-	private int año;
+	private int anyo;
 	private String director;
 	private String genero;
 	private String nombre;
 
-	public Pelicula(int año, String director, String genero, String nombre) {
+	public Pelicula(int anyo, String director, String genero, String nombre) {
 		super();
-		this.año = año;
+		this.anyo = anyo;
 		this.director = director;
 		this.genero = genero;
 		this.nombre = nombre;
@@ -23,18 +23,18 @@ public class Pelicula {
 
 	public Pelicula() {
 		super();
-		this.año = 0;
+		this.anyo = 0;
 		this.director = "";
 		this.genero = "";
 		this.nombre = "";
 	}
 
-	public int getAño() {
-		return año;
+	public int getAnyo() {
+		return anyo;
 	}
 
-	public void setAño(int año) {
-		this.año = año;
+	public void setAnyo(int anyo) {
+		this.anyo = anyo;
 	}
 
 	public String getDirector() {
@@ -63,11 +63,11 @@ public class Pelicula {
 
 	@Override
 	public String toString() {
-		return "pelicula [año=" + año + ", director=" + director + ", genero=" + genero + ", nombre=" + nombre + "]";
+		return "pelicula [aÃ±o=" + anyo + ", director=" + director + ", genero=" + genero + ", nombre=" + nombre + "]";
 	}
 
 	public String mostrarPelicula() {
-		return "El nombre de la película es " + nombre + " , del año " + año + ", del genero " + genero
+		return "El nombre de la pelÃ­cula es " + nombre + " , del aÃ±o " + anyo + ", del genero " + genero
 				+ " y del director " + director;
 	}
 
@@ -76,26 +76,26 @@ public class Pelicula {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Introduce el nombre de la pelicula");
 		String n = sc.nextLine().toUpperCase();
-		System.out.println("Introduce el género de la película");
+		System.out.println("Introduce el gï¿½nero de la pelï¿½cula");
 		String g = sc.nextLine().toUpperCase();
-		System.out.println("Introduce el director de la película");
+		System.out.println("Introduce el director de la pelï¿½cula");
 		String d = sc.nextLine().toUpperCase();
 
-		int año = 0;
+		int anyo = 0;
 
 		boolean correcto = true;
 		while (correcto) {
 
 			try {
-				System.out.println("Introduce el año de la pelicula");
-				año = sc.nextInt();
+				System.out.println("Introduce el aï¿½o de la pelicula");
+				anyo = sc.nextInt();
 				correcto = false;
 			} catch (Exception e) {
-				System.out.println("El año debe ser un número");
+				System.out.println("El aï¿½o debe ser un nï¿½mero");
 			}
 		}
-		// System.out.println("película "+n+" género "+g+" año "+año+" director"+d);
-		Pelicula p = new Pelicula(año, d, g, n); // Creamos el objeto p
+		// System.out.println("pelÃ­cula "+n+" gÃ©nero "+g+" aÃ±o "+anyo+" director"+d);
+		Pelicula p = new Pelicula(anyo, d, g, n); // Creamos el objeto p
 
 		return p;
 	}
